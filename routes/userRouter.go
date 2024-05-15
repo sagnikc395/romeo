@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/sagnikc395/romeo/controller"
+	controller "github.com/sagnikc395/romeo/controllers"
 )
 
 //routes and endpoints defined for the end user.
