@@ -18,8 +18,6 @@ import (
 var foodCollection *mongo.Collection = db.OpenCollection(db.Client, "food")
 var validate = validator.New()
 
-var menuCollection *mongo.Collection = db.OpenCollection(db.Client, "menu")
-
 func GetFoods() gin.HandlerFunc {
 	return func(ctx *gin.Context) {}
 }
