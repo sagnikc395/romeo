@@ -10,7 +10,7 @@ func GetTable() gin.HandlerFunc {
 	return func(ctx *gin.Context) {}
 }
 
-func CreateTable() gin.HandlerFunc {
+func CreateTables() gin.HandlerFunc {
 	return func(ctx *gin.Context) {}
 }
 

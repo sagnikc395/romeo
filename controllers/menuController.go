@@ -10,7 +10,7 @@ func GetMenu() gin.HandlerFunc {
 	return func(ctx *gin.Context) {}
 }
 
-func CreateMenu() gin.HandlerFunc {
+func CreateMenus() gin.HandlerFunc {
 	return func(ctx *gin.Context) {}
 }
 

@@ -10,7 +10,7 @@ func GetInvoice() gin.HandlerFunc {
 	return func(ctx *gin.Context) {}
 }
 
-func CreateInvoice() gin.HandlerFunc {
+func CreateInvoices() gin.HandlerFunc {
 	return func(ctx *gin.Context) {}
 }
 
