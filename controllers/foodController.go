@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"context"
-	"fmt"
 	"net/http"
 	"time"
 
@@ -55,7 +54,7 @@ func CreateFood() gin.HandlerFunc {
 
 		defer cancel()
 		if err != nil {
-			msg := fmt.Sprintf("menu was not found")
+			msg := "menu was not found"
 			ctx.JSON(http.StatusInternalServerError, gin.H{"error": msg})
 			return
 		}
@@ -68,7 +67,7 @@ func CreateFood() gin.HandlerFunc {
 
 		result, inserterr := foodCollection.InsertOne(c, food)
 		if inserterr != nil {
-			msg := fmt.Sprintf("food item was not created")
+			msg := "food item was not created"
 			ctx.JSON(http.StatusInternalServerError, gin.H{"error": msg})
 			return
 		}
@@ -83,7 +82,7 @@ func UpdateFood() gin.HandlerFunc {
 }
 
 func round(num float64) int {
-	return 0
+	return int(num)
 }
 
 func toFixed(num float64, precision int) float64 {
